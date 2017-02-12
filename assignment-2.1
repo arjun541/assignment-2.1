@@ -1,0 +1,14 @@
+
+
+step 1 :command to create the directory "/user/acadgild/hadoop"
+
+hadoop fs -mkdir /user/acadgild/hadoop
+
+
+step 2:create new file word-count.txt
+hadoop fs -touchz /user/acadgild/hadoop/word-count.txt
+
+
+step 3 :append text to the file
+
+echo "type the text here " | hadoop fs -appendToFile - /user/acadgild/hadoop/
